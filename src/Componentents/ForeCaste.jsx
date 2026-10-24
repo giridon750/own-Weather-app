@@ -12,7 +12,7 @@ function ForeCaste(props) {
 
         <div className="p-5 text-center">
 
-            <div className="flex justify-between">
+            <div className="flex justify-between m-3">
 
                 <div className="flex justify-between">
                     <h1 className="text-blue-950 font-bold">5 Days ForeCaste</h1>
@@ -25,7 +25,7 @@ function ForeCaste(props) {
                 </div>
             </div>
 
-           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
+           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 pr-2 pt-2 mt-4 w-full">
                 {forecast?.map((day) => {
 
                     return (<>

@@ -41,9 +41,7 @@ function handleButton(){
 
             <h1 className="font-bold text-blue-950 text-4xl mt-2">Check the Weather <br /> of your city</h1>
 
-            <p className="text- text-blue-950 mt-2">
-                Get real-time Weather upadates,plan your day <br />
-                with confidence
+            <p className="text- text-blue-950 mt-2"> Get real-time Weather upadates,plan your day  with confidence
 
             </p>
 
@@ -53,7 +51,7 @@ function handleButton(){
 
                     {/* ------------- */}
 
-                    <input type="text" className="outline-none text-blue-900 w-full" placeholder="Enter city name (e.g.chennai) " 
+                    <input type="text" className="outline-none text-blue-900 w-full " placeholder="Enter city name" 
                     
                    onChange={(event)=>{
                     handleSearch(event)
