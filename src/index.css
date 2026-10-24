@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+.forecast-card {
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgb(15 23 42 / 12%);
+  border-color: #7dd3fc;
+}
+
+.weather-icon-float {
+  animation: weather-icon-float 4s ease-in-out infinite;
+}
+
+@keyframes weather-icon-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .forecast-card,
+  .weather-icon-float {
+    animation: none;
+    transition: none;
+  }
+}
